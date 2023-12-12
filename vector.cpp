@@ -1,4 +1,6 @@
 #include<bits/stdc++.h>
+#include <vector>
+#include <string>
 using namespace std;
 
 #define el "\n";
@@ -116,8 +118,45 @@ int main(){
 // if(it == v.end()){ cout<<"Not found"<<el;}
 // else{ cout<<"Found"<<el;}
 
+//Vector Input
+//----------------------------------------------------------------------------------------------------
+// vector<int>v;
+// int n;
+// cin>>n;
+// for(int i=0;i<n;i++){
+//     int x;
+//     cin>>x;
+//     v.pb(x);
+// }
+// prnt(v);
+
+//Vector of string 
+//----------------------------------------------------------------------------------
+
+// vector<string>v;
+// int n;
+// cin>>n;
+// for(int i = 0; i< n;i++){
+//     string x;
+//     cin>>x;
+//     v.pb(x);
+// }
+// for(string i:v){
+//     cout<<i<<" ";
+// }
+// cout<<el;
 
 
-
+int n;
+cin>>n;
+cin.ignore();
+vector<string>v(n);
+for(int i=0;i<n;i++){
+    getline(cin,v[i]);
+}
+for(string alu:v){
+    cout<<alu<<" ";
+}
+cout<<el;
 return 0;
 }
